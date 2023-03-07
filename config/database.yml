@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password: postgres
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: slack-water-bot_development
+
+test:
+  <<: *default
+  database: slack-water-bot_test
+
+production:
+  <<: *default
+  database: slack-water-bot_production
+  username: slack-water-bot
+  password: <%= ENV["CONCERT_APP_DATABASE_PASSWORD"] %>
