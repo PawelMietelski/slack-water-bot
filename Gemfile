@@ -29,7 +29,7 @@ gem "jbuilder"
 
 gem "sidekiq"
 
-gem "interactor"
+gem 'dotenv-rails'
 
 gem "httparty"
 # Use Redis adapter to run Action Cable in production
