@@ -28,5 +28,6 @@
 
 /.idea
 .env
+aws_slack_bot.pem
 
 /config/master.key

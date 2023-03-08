@@ -5,9 +5,6 @@ services:
     restart: always
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
     ports:
       - '5432:5432'
 

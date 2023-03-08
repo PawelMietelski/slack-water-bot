@@ -17,5 +17,5 @@ test:
 production:
   <<: *default
   database: slack-water-bot_production
-  username: slack-water-bot
+  username: postgres
   password: <%= ENV["DATABASE_PASSWORD"] %>
